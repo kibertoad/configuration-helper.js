@@ -40,3 +40,6 @@ module.exports = nconf;
 In order to supply decryption key in a secure way, use the decryption key retrieval code from the example and then start service using the following command structure:
 
 " DECRYPTION_KEY=dummyKey pm2 start src/server.js --name=dummy-service -- --SERVICE_CONFIG_FILE=config/overrides/service.profileName.public.conf.json --SERVICE_ENCRYPTED_CONFIG_FILE=config/overrides/service.profileName.restricted.conf.encrypted.json"
+
+Note that space in the beginning will prevent bash from storing command in history, while setting DECRYPTION_KEY as an environment variable prevents process managers (e. g. pm2) from displaying it next to other launch parameters
+It still works fine with automatic pm2 restarts on crashes.
