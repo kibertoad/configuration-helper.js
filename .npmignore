@@ -1,0 +1,6 @@
+.idea/
+.editorconfig
+.nyc_output/
+.build/
+.npmignore
+README.md
