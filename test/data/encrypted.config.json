@@ -1,0 +1,10 @@
+{
+  "TESLA_MESSAGE_SERVICE_DB_USER": {
+    "alg": "aes-256-ctr",
+    "value": "87513a00f8f2bfe88cccec7aa6c529df"
+  },
+  "TESLA_MESSAGE_SERVICE_DB_PASSWORD": {
+    "alg": "aes-256-ctr",
+    "value": "87473d17a5a1d3abcc"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "configuration-helper",
+  "version": "1.0.0",
+  "description": "Service configuration utils",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha ./test",
+    "test-coverage": "nyc npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@https://github.com/kibertoad/configuration-helper.js.git"
+  },
+  "homepage": "https://github.com/kibertoad/configuration-helper.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "3.4.2",
+    "nconf": "0.8.4",
+    "nyc": "^11.0.3"
+  },
+  "nyc": {
+    "description": "test coverage",
+    "include": [
+      "src/**"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "cache": true,
+    "all": true,
+    "report-dir": "./build/reports/coverage",
+    "check-coverage": true,
+    "lines": 80,
+    "statements": 80,
+    "functions": 100,
+    "branches": 70
+  }
+}
